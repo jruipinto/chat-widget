@@ -1,0 +1,27 @@
+:host{
+  display: flex;
+  border-bottom: 1px;
+  margin-bottom: 0.5rem;
+  .chat-conversation-avatar{
+    width: 2rem;
+    background-color: #C4C4C4;
+    border-radius: 1rem;
+  }
+  .chat-conversation-details{
+    width: 80%;
+    margin-left: 0.5rem;
+    .chat-conversation-address{
+      font-size: 1.3em;
+    }
+    .chat-conversation-feedback-icon{
+      width: 1em;
+      color: blue;
+    }
+    .chat-conversation-message-preview{
+    }
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
