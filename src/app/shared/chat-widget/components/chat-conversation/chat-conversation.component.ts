@@ -7,7 +7,7 @@ import { Conversation } from '../../models/conversation.model';
   styleUrls: ['./chat-conversation.component.scss']
 })
 export class ChatConversationComponent {
-  @Input() props: Conversation;
+  @Input() conversation: Conversation;
 
   constructor() { }
 

@@ -3,10 +3,11 @@
   right: 1rem;
   bottom: 1rem;
   border-radius: 10px;
-  min-width: 15rem;
+  min-width: 13rem;
   min-height: 20rem;
   background-color: #ededed;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  //box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .chat-header {
@@ -16,9 +17,10 @@
   padding: 0.5rem;
   color: #fafafa;
   font-size: 1.3em;
+  font-weight: 500;
   .chat-minimize {
     position: absolute;
-    left: 13.5rem;
+    left: 11.5rem;
     font-size: 2rem;
     font-weight: 100;
     margin-top: -0.3rem;

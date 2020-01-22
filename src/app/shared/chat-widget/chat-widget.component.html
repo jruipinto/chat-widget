@@ -3,31 +3,8 @@
   <span class="chat-minimize">-</span>
 </div>
 <div class="chat-body">
-  <div class="chat-conversation">
-    <div class="chat-conversation-avatar">.</div>
-    <div class="chat-conversation-details">
-      <div class="row">
-        <div class="chat-conversation-address">910138725</div>
-      </div>
-      <div class="row">
-        <div class="chat-conversation-feedback-icon">V</div>
-        <div class="chat-conversation-message-preview">message preview...</div>
-      </div>
-    </div>
+  <div *ngFor="let conversation of conversations">
+    <app-chat-conversation [conversation]="conversation">
+    </app-chat-conversation>
   </div>
-
-  <div class="chat-conversation">
-    <div class="chat-conversation-avatar">.</div>
-    <div class="chat-conversation-details">
-      <div class="row">
-        <div class="chat-conversation-address">910138725</div>
-      </div>
-      <div class="row">
-        <div class="chat-conversation-feedback-icon">V</div>
-        <div class="chat-conversation-message-preview">message preview...</div>
-      </div>
-    </div>
-  </div>
-
-  <app-chat-conversation [props]="conversation"></app-chat-conversation>
 </div>
