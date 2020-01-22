@@ -1,10 +1,11 @@
-<div class="chat-header">
-  Mensagens
-  <span class="chat-minimize">-</span>
-</div>
-<div class="chat-body">
-  <div *ngFor="let conversation of conversations">
-    <app-chat-conversation [conversation]="conversation">
-    </app-chat-conversation>
-  </div>
-</div>
+<app-chat-dialog-home
+  *ngIf="!minimize"
+  [conversations]="conversations"
+  [(minimize)]
+
+></app-chat-dialog-home>
+
+<app-chat-floating-icon
+  *ngIf="minimize"
+  (click)="minimize = false"
+></app-chat-floating-icon>

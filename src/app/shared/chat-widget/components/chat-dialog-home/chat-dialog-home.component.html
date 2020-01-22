@@ -1,0 +1,10 @@
+<div class="chat-header">
+  Mensagens
+  <span class="chat-minimize" (click)="this.minimizeEvent.emit('true')">-</span>
+</div>
+<div class="chat-body">
+  <div *ngFor="let conversation of conversations">
+    <app-chat-conversation [conversation]="conversation">
+    </app-chat-conversation>
+  </div>
+</div>

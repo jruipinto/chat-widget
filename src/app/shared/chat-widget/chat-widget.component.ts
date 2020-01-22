@@ -8,6 +8,7 @@ import { Conversation } from './models/conversation.model';
 })
 export class ChatWidgetComponent {
   @Input() conversations: Conversation[];
+  minimize = true;
 
   constructor() { }
 
