@@ -8,7 +8,9 @@ import { Conversation } from './models/conversation.model';
 })
 export class ChatWidgetComponent {
   @Input() conversations: Conversation[];
-  minimize = true;
+  @Input() messages: any[];
+  route: 'icon' | 'home' | 'conversation' = 'icon';
+
 
   constructor() { }
 

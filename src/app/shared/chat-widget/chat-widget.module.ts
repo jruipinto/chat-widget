@@ -4,11 +4,12 @@ import { ChatWidgetComponent } from './chat-widget.component';
 import { ChatConversationComponent } from './components/chat-conversation/chat-conversation.component';
 import { ChatFloatingIconComponent } from './components/chat-floating-icon/chat-floating-icon.component';
 import { ChatDialogHomeComponent } from './components/chat-dialog-home/chat-dialog-home.component';
+import { ChatDialogConversationComponent } from './components/chat-dialog-conversation/chat-dialog-conversation.component';
 
 
 
 @NgModule({
-  declarations: [ChatWidgetComponent, ChatConversationComponent, ChatFloatingIconComponent, ChatDialogHomeComponent],
+  declarations: [ChatWidgetComponent, ChatConversationComponent, ChatFloatingIconComponent, ChatDialogHomeComponent, ChatDialogConversationComponent],
   imports: [CommonModule],
   exports: [ChatWidgetComponent]
 })

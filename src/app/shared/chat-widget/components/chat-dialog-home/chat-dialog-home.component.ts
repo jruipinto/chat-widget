@@ -8,7 +8,7 @@ import { Conversation } from '../../models/conversation.model';
 })
 export class ChatDialogHomeComponent {
   @Input() conversations: Conversation[];
-  @Output('minimize') minimizeEvent = new EventEmitter<boolean>();
+  @Output() routeChange = new EventEmitter<any>();
 
   constructor() { }
 
