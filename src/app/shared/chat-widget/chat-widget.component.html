@@ -1,8 +1,8 @@
-<app-chat-dialog-home *ngIf="route === 'home'" [conversations]="conversations" (routeChange)="route=$event">
-</app-chat-dialog-home>
+<app-cw-page-home *ngIf="state$ | async as state" [conversations]="conversations" (routeChange)="route=$event">
+</app-cw-page-home>
 
-<app-chat-dialog-conversation *ngIf="route === 'conversation'" [(messages)]="messages" (routeChange)="route=$event">
-</app-chat-dialog-conversation>
+<app-cw-page-chat *ngIf="route === 'conversation'" [(messages)]="messages" (routeChange)="route=$event">
+</app-cw-page-chat>
 
-<app-chat-floating-icon *ngIf="route === 'icon'" (click)="route = 'home'">
-</app-chat-floating-icon>
+<app-cw-floating-icon *ngIf="route === 'icon'" (click)="route = 'home'">
+</app-cw-floating-icon>

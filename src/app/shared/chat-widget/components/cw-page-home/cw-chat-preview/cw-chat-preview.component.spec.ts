@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChatDialogHomeComponent } from './chat-dialog-home.component';
+import { CwChatPreviewComponent } from './cw-chat-preview.component';
 
-describe('ChatDialogHomeComponent', () => {
-  let component: ChatDialogHomeComponent;
-  let fixture: ComponentFixture<ChatDialogHomeComponent>;
+describe('CwChatPreviewComponent', () => {
+  let component: CwChatPreviewComponent;
+  let fixture: ComponentFixture<CwChatPreviewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChatDialogHomeComponent ]
+      declarations: [ CwChatPreviewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChatDialogHomeComponent);
+    fixture = TestBed.createComponent(CwChatPreviewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

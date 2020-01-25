@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChatWidgetComponent } from './chat-widget.component';
-import { ChatConversationComponent } from './components/chat-conversation/chat-conversation.component';
-import { ChatFloatingIconComponent } from './components/chat-floating-icon/chat-floating-icon.component';
-import { ChatDialogHomeComponent } from './components/chat-dialog-home/chat-dialog-home.component';
-import { ChatDialogConversationComponent } from './components/chat-dialog-conversation/chat-dialog-conversation.component';
-
-
+import { CwFloatingIconComponent } from './components/cw-floating-icon/cw-floating-icon.component';
+import { CwPageHomeComponent } from './components/cw-page-home/cw-page-home.component';
+import { CwPageChatComponent } from './components/cw-page-chat/cw-page-chat.component';
+import { CwChatPreviewComponent } from './components/cw-page-home/cw-chat-preview/cw-chat-preview.component';
 
 @NgModule({
-  declarations: [ChatWidgetComponent, ChatConversationComponent, ChatFloatingIconComponent, ChatDialogHomeComponent, ChatDialogConversationComponent],
+  declarations: [
+    ChatWidgetComponent,
+    CwFloatingIconComponent,
+    CwPageHomeComponent,
+    CwPageChatComponent,
+    CwChatPreviewComponent
+  ],
   imports: [CommonModule],
   exports: [ChatWidgetComponent]
 })

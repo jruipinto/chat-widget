@@ -1,0 +1,68 @@
+:host {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 10px;
+  width: 13rem;
+  height: 20rem;
+  background-color: #ededed;
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3),
+    0px 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.chat-header {
+  height: 2rem;
+  background-color: #297e64;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0.5rem;
+  color: #fafafa;
+  font-size: 1.3em;
+  font-weight: 500;
+
+  svg {
+      fill:#fafafa;
+      height: 1rem;
+      width: 1rem;
+      margin-bottom: -.2rem;
+      cursor: pointer;
+  }
+
+  .chat-minimize {
+    position: absolute;
+    left: 11.5rem;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: -0.3rem;
+    cursor: pointer;
+  }
+}
+
+.chat-body {
+  padding: 0.5rem;
+  .chat-conversation {
+    display: flex;
+    border-bottom: 1px;
+    margin-bottom: 0.5rem;
+    .chat-conversation-avatar {
+      width: 2rem;
+      background-color: #c4c4c4;
+      border-radius: 1rem;
+    }
+    .chat-conversation-details {
+      width: 80%;
+      margin-left: 0.5rem;
+      .chat-conversation-address {
+        font-size: 1.3em;
+      }
+      .chat-conversation-feedback-icon {
+        width: 1em;
+        color: blue;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}

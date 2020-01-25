@@ -1,17 +1,12 @@
-import { Component, Input } from '@angular/core';
-import { Conversation } from './models/conversation.model';
+import { Component } from '@angular/core';
+import { CwStateService } from './services/cw-state.service';
 
 @Component({
   selector: 'app-chat-widget',
-  templateUrl: './chat-widget.component.html',
-  styleUrls: ['./chat-widget.component.scss']
+  templateUrl: './chat-widget.component.html'
 })
 export class ChatWidgetComponent {
-  @Input() conversations: Conversation[];
-  @Input() messages: any[];
-  route: 'icon' | 'home' | 'conversation' = 'icon';
 
-
-  constructor() { }
+  constructor(private cws: CwStateService) { }
 
 }

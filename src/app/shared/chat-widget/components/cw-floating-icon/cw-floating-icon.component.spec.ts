@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChatFloatingIconComponent } from './chat-floating-icon.component';
+import { CwFloatingIconComponent } from './cw-floating-icon.component';
 
-describe('ChatFloatingIconComponent', () => {
-  let component: ChatFloatingIconComponent;
-  let fixture: ComponentFixture<ChatFloatingIconComponent>;
+describe('CwFloatingIconComponent', () => {
+  let component: CwFloatingIconComponent;
+  let fixture: ComponentFixture<CwFloatingIconComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChatFloatingIconComponent ]
+      declarations: [ CwFloatingIconComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChatFloatingIconComponent);
+    fixture = TestBed.createComponent(CwFloatingIconComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
