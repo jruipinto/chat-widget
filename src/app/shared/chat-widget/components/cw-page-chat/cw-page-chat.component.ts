@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
+import { CwStateService } from '../../services/cw-state.service';
 
 @Component({
   selector: 'app-cw-page-chat',
@@ -6,6 +7,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./cw-page-chat.component.scss']
 })
 export class CwPageChatComponent {
-  @Input() messages: any[];
-  @Output() routeChange = new EventEmitter<any>();
+  state$ = this.cws.state$;
+  constructor(private cws: CwStateService) { }
 }

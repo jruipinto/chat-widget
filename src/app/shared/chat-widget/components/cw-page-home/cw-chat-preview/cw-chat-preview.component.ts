@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Conversation } from '../../../models/conversation.model';
+import { Message } from '../../../models/message.model';
 
 @Component({
   selector: 'app-cw-chat-preview',
@@ -7,5 +7,5 @@ import { Conversation } from '../../../models/conversation.model';
   styleUrls: ['./cw-chat-preview.component.scss']
 })
 export class CwChatPreviewComponent {
-  @Input() conversation: Conversation;
+  @Input() chatPreview: Message;
 }

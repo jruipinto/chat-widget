@@ -1,8 +1,0 @@
-<app-cw-page-home *ngIf="state$ | async as state" [conversations]="conversations" (routeChange)="route=$event">
-</app-cw-page-home>
-
-<app-cw-page-chat *ngIf="route === 'conversation'" [(messages)]="messages" (routeChange)="route=$event">
-</app-cw-page-chat>
-
-<app-cw-floating-icon *ngIf="route === 'icon'" (click)="route = 'home'">
-</app-cw-floating-icon>

@@ -5,6 +5,7 @@ import { CwFloatingIconComponent } from './components/cw-floating-icon/cw-floati
 import { CwPageHomeComponent } from './components/cw-page-home/cw-page-home.component';
 import { CwPageChatComponent } from './components/cw-page-chat/cw-page-chat.component';
 import { CwChatPreviewComponent } from './components/cw-page-home/cw-chat-preview/cw-chat-preview.component';
+import { CwHeaderComponent } from './components/cw-header/cw-header.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { CwChatPreviewComponent } from './components/cw-page-home/cw-chat-previe
     CwFloatingIconComponent,
     CwPageHomeComponent,
     CwPageChatComponent,
-    CwChatPreviewComponent
+    CwChatPreviewComponent,
+    CwHeaderComponent
   ],
   imports: [CommonModule],
   exports: [ChatWidgetComponent]
