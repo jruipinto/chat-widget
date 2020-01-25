@@ -22,7 +22,7 @@ export class CwStateService {
   };
   state$ = new BehaviorSubject(this.initialState);
 
-  public patchState = (patch: Partial<CwState>) => this.state$.pipe(
+  public patchState$ = (patch: Partial<CwState>) => this.state$.pipe(
     first(),
     map(state => {
       console.log('Chat widget state - old:', state);
@@ -34,6 +34,10 @@ export class CwStateService {
       tap(newState => console.log('Chat widget state - new:', newState))
     ))
   )
+
+  public patchState(patch: Partial<CwState>) {
+    return this.patchState$(patch).subscribe();
+  }
 
   constructor() { }
 }
