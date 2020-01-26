@@ -19,7 +19,8 @@ export class AppComponent implements AfterContentInit {
     this.cws.patchState({ chatsPreview });
     this.cws.stateMutation$.pipe(
       filter(mutation => typeof mutation.selectedChatPreview !== 'undefined'),
-      tap(m => this.cws.patchState({ activeChat: [m.selectedChatPreview] }))
+      // tap(m => this.cws.patchState({ activeChat: [m.selectedChatPreview] }))
+      tap(m => this.cws.patchState({ activeChat: chatsPreview }))
     ).subscribe();
   }
   constructor(private cws: CwStateService) { }
