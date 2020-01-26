@@ -8,7 +8,7 @@ import { CwStateService } from './services/cw-state.service';
     <app-cw-page-home *ngIf="state.activeRoute === 'home'">
     </app-cw-page-home>
 
-    <app-cw-page-chat *ngIf="state.activeRoute === 'conversation'">
+    <app-cw-page-chat *ngIf="state.activeRoute === 'chat'">
     </app-cw-page-chat>
 
     <app-cw-floating-icon *ngIf="state.activeRoute === 'icon'" (click)="expandCw()">

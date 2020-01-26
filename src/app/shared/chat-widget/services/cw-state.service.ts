@@ -20,7 +20,18 @@ export class CwStateService {
     chatsPreview: null,
     selectedChatPreview: null
   };
-  state$ = new BehaviorSubject(this.initialState);
+  /**
+   * state$ observable publishes full Chat-widget's
+   * state every time it changes
+   */
+  state$: BehaviorSubject<CwState> = new BehaviorSubject(this.initialState);
+
+  /**
+   * stateMutation$ observable publishes ONLY the
+   * mutation to Chat-widget's state every time
+   * it changes
+   */
+  stateMutation$: BehaviorSubject<Partial<CwState>> = new BehaviorSubject(null);
 
   public patchState$ = (patch: Partial<CwState>) => this.state$.pipe(
     first(),
@@ -28,6 +39,7 @@ export class CwStateService {
       console.log('Chat widget state - old:', state);
       console.log('Chat widget state - mutation:', patch);
       this.state$.next({ ...state, ...patch });
+      this.stateMutation$.next(patch);
     }),
     concatMap(() => this.state$.pipe(
       first(),

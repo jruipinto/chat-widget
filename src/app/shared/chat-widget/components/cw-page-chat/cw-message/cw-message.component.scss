@@ -1,0 +1,12 @@
+.received-message, .sent-message{
+    padding: 0.2rem;
+    max-width: 9rem;
+}
+.received-message{
+    background-color: #E1E1E1;
+    float: left;
+}
+.sent-message{
+    background-color: #CBE5DD;
+    float: right;
+}

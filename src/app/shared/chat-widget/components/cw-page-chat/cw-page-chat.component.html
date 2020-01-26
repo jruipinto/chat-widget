@@ -1,4 +1,6 @@
 <app-cw-header></app-cw-header>
 <div class="chat-body" *ngIf="state$ | async as state">
-
+    <div class="row" *ngFor="let message of state.activeChat">
+        <app-cw-message [message]="message"></app-cw-message>
+    </div>
 </div>
