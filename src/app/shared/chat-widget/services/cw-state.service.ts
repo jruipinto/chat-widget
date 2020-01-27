@@ -8,6 +8,7 @@ export interface CwState {
   activeChat: Message[] | null;
   chatsPreview: Message[] | null;
   selectedChatPreview: Message | null;
+  newMessage: string | null; /** Message created on cw-editor that is to be sent */
 }
 
 @Injectable({
@@ -18,7 +19,8 @@ export class CwStateService {
     activeRoute: 'icon',
     activeChat: null,
     chatsPreview: null,
-    selectedChatPreview: null
+    selectedChatPreview: null,
+    newMessage: null
   };
   /**
    * state$ observable publishes full Chat-widget's
