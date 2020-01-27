@@ -7,6 +7,7 @@ import { CwPageChatComponent } from './components/cw-page-chat/cw-page-chat.comp
 import { CwChatPreviewComponent } from './components/cw-page-home/cw-chat-preview/cw-chat-preview.component';
 import { CwHeaderComponent } from './components/cw-header/cw-header.component';
 import { CwMessageComponent } from './components/cw-page-chat/cw-message/cw-message.component';
+import { CwMessageStateIconComponent } from './components/cw-message-state-icon/cw-message-state-icon.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CwMessageComponent } from './components/cw-page-chat/cw-message/cw-mess
     CwPageChatComponent,
     CwChatPreviewComponent,
     CwHeaderComponent,
-    CwMessageComponent
+    CwMessageComponent,
+    CwMessageStateIconComponent
   ],
   imports: [CommonModule],
   exports: [ChatWidgetComponent]
