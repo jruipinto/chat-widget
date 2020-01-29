@@ -12,4 +12,6 @@
 
 .chat-body {
   padding: 0.5rem;
+  overflow-y: scroll;
+  height: 18rem; // :host height - header height
 }

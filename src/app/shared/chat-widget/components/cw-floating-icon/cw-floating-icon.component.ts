@@ -23,6 +23,9 @@ export class CwFloatingIconComponent implements AfterContentInit {
     this.cws.state$.pipe(
       tap(() => this.unreadMessages = false),
       tap(cwState => {
+        if (!cwState.chatsPreview) {
+          return;
+        }
         cwState.chatsPreview.forEach(chatPreview => {
           if (chatPreview.state === 'unread') {
             this.unreadMessages = true;
